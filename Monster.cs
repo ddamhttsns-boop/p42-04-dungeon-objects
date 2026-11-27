@@ -24,7 +24,7 @@ public class Monster
     }
 
     // Монстр жив, пока у него осталось здоровье. Монстр с 0 HP мёртв.
-    public bool IsAlive => Health >= 0;
+    public bool IsAlive => Health > 0;
 
     // Монстр получает урон. Здоровье не опускается ниже 0.
     public void TakeDamage(int amount)
