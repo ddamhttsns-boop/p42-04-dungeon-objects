@@ -14,7 +14,7 @@ public class Inventory
     // Кладёт предмет в сумку. Если места нет — возвращает false и ничего не меняет.
     public bool Add(Item item)
     {
-        if (Count > Capacity)
+        if (Count >= Capacity)
             return false;
         _items[Count] = item;
         Count++;
