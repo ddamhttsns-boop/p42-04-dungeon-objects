@@ -7,7 +7,7 @@ public static class Combat
     // Урон = атака минус броня, но не меньше MinDamage.
     public static int Damage(int attack, int armor)
     {
-        int damage = armor - attack;
+        int damage = attack - armor;
         if (damage < MinDamage)
             damage = MinDamage;
         return damage;
